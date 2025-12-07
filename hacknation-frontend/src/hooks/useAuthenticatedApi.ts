@@ -10,8 +10,8 @@ export const useAuthenticatedApi = () => {
 			apiFunction: (token: AccessToken, ...args: T) => Promise<R>,
 			...args: T
 		): Promise<R> => {
-			const token = await getAccessToken();
-			return apiFunction(token, ...args);
+			// const token = await getAccessToken();
+			return apiFunction(undefined as unknown as AccessToken, ...args);
 		},
 		[getAccessToken]
 	);

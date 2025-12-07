@@ -1,19 +1,10 @@
-import {
-	Body,
-	Controller,
-	Delete,
-	Get,
-	Post,
-	Req,
-	UseGuards
-} from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post, Req } from '@nestjs/common';
 import { Request } from 'express';
 import { AppConfigService } from 'src/modules/shared/app-config/app-config.service';
 import { AppAccessToken, AppRefreshToken } from 'src/modules/shared/types/ids';
 import { LoginUserRequestDto } from '../dto/requests/login-user-request.dto';
 import { RefreshTokenRequestDto } from '../dto/requests/refresh-token-request-dto';
 import { RegisterDataDto } from '../dto/requests/register-data.dto';
-import { JWTAuthGuard } from '../guards/jwt.guard';
 import { AuthService } from '../services/auth.service';
 
 @Controller('auth')
@@ -43,7 +34,7 @@ export class AuthController {
 	}
 
 	@Delete('me')
-	@UseGuards(JWTAuthGuard)
+	// @UseGuards(JWTAuthGuard)
 	async handleUserDelete(@Req() req: Request) {
 		const reqU = req.user;
 

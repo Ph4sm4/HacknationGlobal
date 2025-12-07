@@ -1,8 +1,6 @@
 import { GlobalStyles, StyledEngineProvider } from '@mui/material';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Toaster } from 'sonner';
-import AuthenticatedRoute from './components/Redirects/AuthenticatedRoute';
-import UnauthenticatedRoute from './components/Redirects/UnauthenticatedRoute';
 import AuthUserContext from './contexts/AuthUserContext';
 import './i18n/i18n';
 import './index.css';
@@ -34,29 +32,29 @@ function App() {
 						<Route
 							path={AppRoutePaths.loginPage()}
 							element={
-								<UnauthenticatedRoute>
-									<Login />
-								</UnauthenticatedRoute>
+								// <UnauthenticatedRoute>
+								<Login />
+								// </UnauthenticatedRoute>
 							}
 						/>
 
 						<Route
 							path={AppRoutePaths.register()}
 							element={
-								<UnauthenticatedRoute>
-									<Register />
-								</UnauthenticatedRoute>
+								// <UnauthenticatedRoute>
+								<Register />
+								// </UnauthenticatedRoute>
 							}
 						/>
 
 						<Route
 							path={AppRoutePaths.mainDashboard()}
 							element={
-								<AuthenticatedRoute>
-									<BaseLayout>
-										<MainDashboard />
-									</BaseLayout>
-								</AuthenticatedRoute>
+								// <AuthenticatedRoute>
+								<BaseLayout>
+									<MainDashboard />
+								</BaseLayout>
+								// </AuthenticatedRoute>
 							}
 						/>
 
