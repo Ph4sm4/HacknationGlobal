@@ -1,0 +1,116 @@
+{
+	"login": {
+		"welcome": "Witaj!",
+		"loginToApp": "Zaloguj się do aplikacji",
+		"email": "Email",
+		"password": "Hasło",
+		"login": "Zaloguj się",
+		"register": "Zarejestruj się",
+		"noAccount": "Nie masz konta?"
+	},
+	"register": {
+		"welcome": "Witaj!",
+		"registerToApp": "Zarejestruj się do aplikacji",
+		"email": "Email",
+		"password": "Hasło",
+		"login": "Zaloguj się",
+		"nickname": "Nazwa użytkownika",
+		"confirmPassword": "Potwierdź hasło",
+		"register": "Zarejestruj się",
+		"hasAccount": "Masz już konto?"
+	},
+
+	"baseModal": {
+		"buttonContinue": "Kontynuuj",
+		"buttonCancel": "Anuluj"
+	},
+
+	"header": {
+		"yourAccount": "Twoje konto",
+		"profile": "Profil",
+		"settings": "Ustawienia",
+		"logout": "Wyloguj się",
+		"mainDashboard": "Strona główna",
+		"reportsPage": "Rejestr zgłoszeń",
+		"guidelines": "Poradnik"
+	},
+	"notFound": {
+		"title": "Strona nie istnieje",
+		"desc": "Strona pod tym adresem nie istnieje",
+		"goBack": "Wróć"
+	},
+
+	"mainDashboard": {
+		"urlInputPlaceholder": "Nazwa domeny do sprawdzenia",
+		"generateQR": "Generuj kod QR",
+		"title": "Sprawdź autentyczność domeny",
+		"domain": "Domena",
+		"checkCertificates": "Sprawdź certyfikaty",
+		"reportSite": "Zgłoś stronę",
+		"domainReportModal": {
+			"title": "Domena zgłoszona",
+			"description": "Domena została zgłoszona do rejestru domen. W niedalekiej przyszłości przyjrzymy się jej"
+		},
+		"validationModal": {
+			"title": "Wyniki sprawdzania",
+			"description": "Oto wyniki analizy. Dane certyfikatów zostały pobrane podczas weryfikacji połączenia TLS",
+			"domainLabel": "Domena",
+			"sections": {
+				"subject": "Dane podmiotu",
+				"issuer": "Wystawca",
+				"validity": "Ważność certyfikatu",
+				"additionalInfo": "Dodatkowe informacje",
+				"certificateDetails": "Szczegóły certyfikatu",
+				"domainOverview": "Przegląd domeny",
+				"sslCertificateSummary": "Podsumowanie certyfikatu SSL",
+				"certificateChain": "Łańcuch certyfikatów"
+			},
+			"aiAnalysisResult": "Wynik analizy AI",
+			"noCertificates": "Brak certyfikatów",
+
+			"fields": {
+				"validFrom": "Ważny od",
+				"validTo": "Ważny do",
+				"isTimeValid": "Aktualnie ważny",
+				"subjectAltName": "Alternatywna nazwa podmiotu",
+				"fingerprint": "Odcisk",
+				"host": "Host",
+				"port": "Port",
+				"overallTimeValid": "Ogólna ważność czasowa",
+				"isTrusted": "Zaufany",
+				"trustError": "Błąd zaufania",
+				"domainIncludesGov": "Zawiera \".gov\"",
+				"isInOfficialList": "Na oficjalnej liście domen rządowych"
+			},
+
+			"certificates": {
+				"certificate": "Certyfikat",
+				"ca": "CA"
+			},
+
+			"common": {
+				"yes": "Tak",
+				"no": "Nie",
+				"none": "Brak",
+				"ok": "Ok"
+			}
+		},
+		"officialDomainList": {
+			"searchPlaceholder": "Wyszukaj domenę",
+			"noResults": "Nie znaleziono wyników.",
+			"loading": "Ładowanie",
+			"loadMore": "Załaduj więcej"
+		}
+	},
+
+	"errors": {
+		"invalidLoginAttempt": "Nieprawidłowe dane do logowania. Spróbuj ponownie",
+		"invalidRegisterAttempt": "Taki email lub nazwa użytkownika. Spróbuj ponownie",
+		"checkCertificates": "Nie udało się pobrać informacji o domenie",
+		"getQrCodeString": "Nie udało się wygenerować kodu QR",
+		"localhostNotSupported": "localhost nie jest dostępny jako domena do weryfikacji",
+		"qrCodeNotFoundOrExpired": "Kod QR nie został wygenerowany przez autoryzowany system lub domena nie istnieje",
+		"qrCodeAlreadyUsed": "Kod QR został już wcześniej wykorzystany",
+		"qrCodeExpired": "Kod QR stracił ważność"
+	}
+}

@@ -1,0 +1,17 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: hacknation_postgres
+    hostname: hacknation_postgres
+    restart: on-failure:5
+    ports:
+      - '5433:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: hacknation
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+volumes:
+  postgres_data:
