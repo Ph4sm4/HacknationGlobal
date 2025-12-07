@@ -1,0 +1,9 @@
+requests
+fastapi
+pydantic
+joblib
+numpy
+pandas
+sklearn
+Levenshtein
+uvicorn
